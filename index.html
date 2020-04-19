@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Demo</title>
+    <link rel="stylesheet" href="/build/tailwind.css">
+</head>
+
+<body class="bg-gray-300">
+    <div class=" bg-gray-100 flex">
+        <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
+            <div class="xl:max-w-lg xl:ml-auto">
+                <div class="flex">
+                    <img src="img/logo.svg" alt="logo" class=" h-10 inline"><span
+                        class="text-3xl text-purple-700 font-semibold ml-2">Testing Tailwind</span>
+                </div>
+                <img src="img/ffx_purple.jpg" alt="new ffx logo"
+                    class="mt-6 rounded-lg shadow-lg sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden">
+                <h1
+                    class="mt-6 text-2xl sm:text-4xl sm:mt-8 lg:text-3xl xl:text-4-xl font-bold text-gray-800 leading-tight">
+                    Firefox has a new logo, it's quite purple now.
+                    <br class="hidden lg:inline" />
+                    <span class="text-purple-600">Hope you enjoy it.</span>
+                </h1>
+                <p class="mt-2 text-gray-600 sm:text-xl sm:mt-4">This is a static demo page built to learn tailwind css.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Sed mi libero, accumsan non magna et, volutpat rutrum leo. Nulla facilisi. Morbi vel iaculis
+                    tortor, quis feugiat arcu. Aliquam ultricies
+                    vitae ex at pharetra. Sed ultricies bibendum sapien, at dapibus nunc iaculis at. Sed interdum elit
+                    eget sem
+                    sollicitudin tempus. Proin luctus consectetur ante id volutpat. Suspendisse in mauris vel libero
+                    pretium cursus.</p>
+                <div class="mt-4 sm:mt-6">
+                    <a href="#" class="btn btn-primary sm:text-base shadow-lg">Get Purple Now</a>
+                    <a href="#" class="btn btn-secondary sm:text-base">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="hidden lg:block lg:w-1/2 lg:relative">
+            <img class="absolute inset-0 h-full w-full object-scale-down object-center"
+                src="img/undraw_statistic_chart_38b6.svg" alt="new ffx logo">
+        </div>
+    </div>
+    <div class="max-w-md sm:max-w-xl lg:max-w-5xl xl:max-w-6xl mx-auto m-8">
+        <h2 class=" text-gray-900 text-2xl">Some Patterns</h1>
+            <div class="flex flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="dummy-img img-bubbles">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Bubbles</h3>
+                            <p class="price">£100 per person</p>
+                            <div class="mt-2">
+                                <a href="#" class=" font-bold text-sm text-purple-500 hover:text-purple-400">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img class="dummy-img img-anchors">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Anchors</h3>
+                            <p class="price">£100 per person</p>
+                            <div class="mt-2">
+                                <a href="#" class=" font-bold text-sm text-purple-500 hover:text-purple-400">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img class="dummy-img img-death-star">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Death Star</h3>
+                            <p class="price">£100 per person</p>
+                            <div class="mt-2">
+                                <a href="#" class=" font-bold text-sm text-purple-500 hover:text-purple-400">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img class="dummy-img img-lisbon">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Lisbon</h3>
+                            <p class="price">£100 per person</p>
+                            <div class="mt-2">
+                                <a href="#" class=" font-bold text-sm text-purple-500 hover:text-purple-400">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img class="dummy-img img-houndstooth">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Houndstooth</h3>
+                            <p class="price">£100 per person</p>
+                            <div class="mt-2">
+                                <a href="#" class=" font-bold text-sm text-purple-500 hover:text-purple-400">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img class="dummy-img img-lips">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Lips</h3>
+                            <p class="price">£100 per person</p>
+                            <div class="mt-2">
+                                <a href="#" class=" font-bold text-sm text-purple-500 hover:text-purple-400">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+<script>
+    // random prices
+    priceElements = document.getElementsByClassName("price")
+    for (var i = 0; i < priceElements.length; i++) {
+        priceElements[i].textContent = `£${(Math.random() * (500)).toFixed(2)} per person`
+    }
+</script>
+
+</html>

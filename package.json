@@ -2,6 +2,7 @@
   "name": "tailwind_basics",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://agarioch.github.io/basic_tailwind",
   "main": "postcss.config.js",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
@@ -11,9 +12,11 @@
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10"
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.2.0"
   },
   "scripts": {
+    "deploy": "npm run build&&npx gh-pages -d public",
     "build": "postcss css/tailwind.css -o public/build/tailwind.css",
     "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
